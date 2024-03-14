@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Data Filter</title>
+</head>
+
+<body>
+  <h2>Sales Data Filter</h2>
+  <form method="post">
+    <label for="customer">Customer:</label>
+    <input type="text" name="customer" id="customer">
+    <br>
+    <label for="product">Product:</label>
+    <input type="text" name="product" id="product">
+    <br>
+    <label for="price">Price:</label>
+    <input type="number" name="price" id="price" step="0.01">
+    <br>
+    <button type="submit">Filter</button>
+  </form>
+
+  <hr>
+
+  <h3>Filtered Results:</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Customer</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Sale Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Filtered data will be displayed here -->
+    </tbody>
+  </table>
+</body>
+
+</html>
